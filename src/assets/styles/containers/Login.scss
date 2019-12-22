@@ -1,0 +1,110 @@
+
+@import '../Vars.scss';
+.login,
+.register {
+  background: linear-gradient($main-color, $secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  min-height: $heigth-main;
+}
+.login__container,
+.register__container {
+  background-color: $white-transparent;
+  border: 2px solid $white;
+  border-radius: 40px;
+  padding: 60px 68px 40px;
+  min-height: 700px;
+  width: 440px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.login__container--form,
+.register__container--form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__container--form label {
+  font-size: $font-size-14;
+}
+.login__container--form > .button:hover,
+.register__container--form > .button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.login__container--remember-me {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.login__container--remember-me a {
+  color: $white;
+  font-size: $font-size-14;
+}
+
+.login__container--social-media > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $font-size-14;
+  margin-bottom: 10px;
+}
+.login__container--social-media > .button {
+  border-radius: 3px;
+}
+
+.button__login-google {
+  background-color: $color-google;
+}
+
+.button__login-twitter {
+  background-color: $color-twitter;
+}
+
+.login__container--social-media > div img {
+  width: 30px;
+  margin-right: 10px;
+}
+.login__container--register a {
+  color: $white;
+  font-weight: bold;
+  font-size: 16px;
+}
+.register__container--login {
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .login, .register {
+      padding: 0 30px;
+  }
+.login__container ,  .register__container{
+  background-color: transparent;
+  box-shadow: initial;
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+.footer {
+  align-items: flex-start;
+  flex-direction: column;
+}
+}
+
+.input {
+  background-color: transparent;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid white;
+  font-size: $font-size-16;
+  font-family: $theme-font-muli;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  height: 50px;
+}
+::placeholder {
+  color: $white;
+}

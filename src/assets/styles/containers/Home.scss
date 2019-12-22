@@ -1,0 +1,18 @@
+@import '../Vars.scss';
+@import '../Media.scss';
+
+body,
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+body {
+  background-color: $main-color;
+  color: $white;
+  font-family: $theme-font-muli;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
