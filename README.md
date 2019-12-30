@@ -445,3 +445,54 @@ Añadir en webpack:
   devServer:{
     historyApiFallback:true,
   },
+
+
+  SWITCH
+  Garantiza que solo un componente se renderize a la vez
+
+  REACT FRAGMENT
+  Permite encapsular varios nodos del DOM sin genererar un nodo innecesario extra
+  Link
+  útil para redireccionar a alguna ruta en una SPA
+
+REDUX
+
+un contenedor predecible del estado en aplicaciones.
+
+Redux nace de la arquitectura Flux, tomando inspiración del lenguaje funcional Elm y es creado por Dan Abramov y Andrew Clark en el 2015.
+
+Redux intenta de predecir las mutaciones que pueda sufrir el estado, creando restricciones de cuando y como pueden ser ejecutadas las actualizaciones en nuestras aplicaciones.
+
+ se basa en tres principios:
+Única fuente de la verdad:
+Nuestra aplicación solo debe de tener un único Store y es la única fuente de información.
+
+El estado es de solo lectura
+La única forma de modificar el estado es emitiendo un acción, este objeto describe lo que va a ocurrir.
+
+Los cambios se realizan con funciones puras
+
+Instalacion redux y react redux 
+npm i redux react-redux --save
+
+GRAVATAR
+
+servicio de almacenamoemyo de imágenes 
+
+instalar md5
+npm i md5 --save
+
+md5 es una librería usada por grravatar para crear un hash y vinculrlo a tu avatar y no guardar tu correo electronico
+
+classname
+Classes dinámicas
+
+npm i --save classnames
+
+REDUX DEVTOOLS
+import { createStore, compose } from 'redux';
+
+const composeEnhancers = 
+window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore(reducer, initialState, composeEnhancers())
